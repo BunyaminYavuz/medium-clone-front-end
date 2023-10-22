@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/medium.css">
+    <title>Medium</title>
+</head>
+
+<body>
+
+    <div class="bg-yellow border-bottom-dark py-1 fixed-top">
+        <div class="container">
+            <!-- ****************************************** Navbar Start************************************************ -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h2><strong>Medium Clone</strong></h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://medium.com/about">
+                                    Our Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://medium.com/membership">
+                                    Membership</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://medium.com/partner-program">
+                                    Write</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://accounts.google.com/v3/signin/identifier?opparams=%253Foperation%253Dlogin&dsh=S-1123534915%3A1697981878110914&access_type=online&client_id=216296035834-k1k6qe060s2tp2a2jam4ljdcms00sttg.apps.googleusercontent.com&nonce=4b126989f60c29ec342566b6935adb9f9ba6d8af9d7c9da194e79b220023331a&o2v=1&redirect_uri=https%3A%2F%2Fmedium.com%2Fm%2Fcallback%2Fgoogle&response_type=id_token+token&scope=email+openid+profile&service=lso&state=google-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dlogin--------------------------lo_home_nav-----------%7Clogin&theme=glif&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAOd5YuVBYJ8l8uGmREYPuJQERC9-6EgbPk6RGyw-D9CBqj8B0B0K5aGYrH7nlvFPNXCTzVfD3EAup5529Yv2wuMcqf2KG8flFZiHJkFZ9GNuzZE2UmhOUUu8WODmv7hDtkHFPHjXTbs8OL9Od5x_1SiHER113kBc2uENv-6eyUw5bavBBOXgrk-0tD6dPJkCpGikC1Dg-LKErcpxTWtMlVtVN3o7S-h3_m6S08GkLXm2TAIkP43FlHf6EZwYggbRYyAvpyXYShJPieRiDk4J4MkqrKM8R-sxXZW8PnvTX53LWUYGx28t-PiJ3HhYexC5RVX38lxKtLNFIwkyotTdVsac7SMdpS9egInPyMnNl9pgnzMWpa_BucVNrCWJgqriTIi3wm_HOxBbmEIwuNRLhCD2qQ5o3YeFuRKeG58x90wdhos3fyP5gnc_OtJC5B96VUeVJw6aF0Oi--secqURgkfEVnolQ%26as%3DS-1123534915%253A1697981878110914%26client_id%3D216296035834-k1k6qe060s2tp2a2jam4ljdcms00sttg.apps.googleusercontent.com%26theme%3Dglif%23&app_domain=https%3A%2F%2Fmedium.com&rart=ANgoxceRf744K2hmzG5jGjsYCVJ2Bnt1_hQQPCEffgRecyxI1J-TYxBPRGkFW4awiCTcQ_K8ztx7X1VLmlCAPL0jEIIFOuLGEg">
+                                    Sign In</a>
+                            </li>
+                            <li class="nav-item ms-3">
+                                <a class="btn btn-dark btn-outline-dark text-light rounded-pill" href="https://accounts.google.com/v3/signin/identifier?opparams=%253Foperation%253Dregister&dsh=S990804664%3A1697981948021753&access_type=online&client_id=216296035834-k1k6qe060s2tp2a2jam4ljdcms00sttg.apps.googleusercontent.com&nonce=48fa208fe7649fcd915d28dd62569e31f94145ec1e80e435da4cec239b1c494d&o2v=1&redirect_uri=https%3A%2F%2Fmedium.com%2Fm%2Fcallback%2Fgoogle&response_type=id_token+token&scope=email+openid+profile&service=lso&state=google-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&theme=glif&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANZRIXxSr8G1BzE43JGX3KXIb_CMsF6h63mftcpUtEc66gFiGJrYIzH_XmCx5ZtgvUnv3Qd1BhY5QqEEA0zj0ty3GTTEEJ_qwEhTNhL1IGPu1snWzwa9RLSQbL9WJYXCd3jQlM1QbSNCAbToNl7TaQzLbOoaPkFUgi2KUVIaE72ObRKTa47GQ0vLPVO2DfGjS0RclD051Jc2n3UqG9b4QyuO4veV4z1AzEvMwB-3246AKLoNQyq6zGNDPh3b6et2o245YXrkA-HtHA_zfvI8deqczDfuxsqUBYgXfc2yO_AVfjuaEwYJvtghjfPAkASb3fxa01XT3rT1V2C1gdDKZFqx-DY_g5-7pIosPSjlwB3cd543rcW_XIrjkThDU8CyzrRzSK2wYfuFkyPsXUhljTIUdZZDtTlrP_rBeuSlSq3DMsdb0gSBiBgxhjGWQmBd6rZzHUEAV05fBpq7lV-dD75OCCNwA%26as%3DS990804664%253A1697981948021753%26client_id%3D216296035834-k1k6qe060s2tp2a2jam4ljdcms00sttg.apps.googleusercontent.com%26theme%3Dglif%23&app_domain=https%3A%2F%2Fmedium.com&rart=ANgoxceQiXxnpovw449v1uu8-AjWK5LxbJHRLLwSG529bPCbx8tNugIrhA9c_d3O5kNJabyDUDoNR1HOQif7HQM-p3owofS38w">
+                                    Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- ****************************************** Navbar End************************************************ -->
+        </div>
+    </div>
+
+    <!-- **************************** Under the navbar the big label start**************************************** -->
+    <div class="bg-yellow py-5 border-bottom-dark mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h1 class="display-1">Stay curious.</h1>
+                    <p>Discover stories, thinking, and expertise from writers on any topic.</p>
+                    <a class="btn btn-lg btn-dark text-light mt-5 rounded-pill" href="https://accounts.google.com/v3/signin/identifier?opparams=%253Foperation%253Dregister&dsh=S990804664%3A1697981948021753&access_type=online&client_id=216296035834-k1k6qe060s2tp2a2jam4ljdcms00sttg.apps.googleusercontent.com&nonce=48fa208fe7649fcd915d28dd62569e31f94145ec1e80e435da4cec239b1c494d&o2v=1&redirect_uri=https%3A%2F%2Fmedium.com%2Fm%2Fcallback%2Fgoogle&response_type=id_token+token&scope=email+openid+profile&service=lso&state=google-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&theme=glif&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANZRIXxSr8G1BzE43JGX3KXIb_CMsF6h63mftcpUtEc66gFiGJrYIzH_XmCx5ZtgvUnv3Qd1BhY5QqEEA0zj0ty3GTTEEJ_qwEhTNhL1IGPu1snWzwa9RLSQbL9WJYXCd3jQlM1QbSNCAbToNl7TaQzLbOoaPkFUgi2KUVIaE72ObRKTa47GQ0vLPVO2DfGjS0RclD051Jc2n3UqG9b4QyuO4veV4z1AzEvMwB-3246AKLoNQyq6zGNDPh3b6et2o245YXrkA-HtHA_zfvI8deqczDfuxsqUBYgXfc2yO_AVfjuaEwYJvtghjfPAkASb3fxa01XT3rT1V2C1gdDKZFqx-DY_g5-7pIosPSjlwB3cd543rcW_XIrjkThDU8CyzrRzSK2wYfuFkyPsXUhljTIUdZZDtTlrP_rBeuSlSq3DMsdb0gSBiBgxhjGWQmBd6rZzHUEAV05fBpq7lV-dD75OCCNwA%26as%3DS990804664%253A1697981948021753%26client_id%3D216296035834-k1k6qe060s2tp2a2jam4ljdcms00sttg.apps.googleusercontent.com%26theme%3Dglif%23&app_domain=https%3A%2F%2Fmedium.com&rart=ANgoxceQiXxnpovw449v1uu8-AjWK5LxbJHRLLwSG529bPCbx8tNugIrhA9c_d3O5kNJabyDUDoNR1HOQif7HQM-p3owofS38w">Start reading</a>
+                </div>
+                <div class="col-5">
+                    <img class="rounded-circle float-end w-50" src="assets/medium.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- **************************** Under the navbar the big label end**************************************** -->
+
+
+    <div class="container mt-5">
+        <!--******************************** Main container start***************************************-->
+        <div class="row">
+            <div class="col-12 mb-2">
+                <h6><i class="fa-solid fa-chart-line"></i><span class="ms-3">Trending on Medium</span></h6>
+            </div>
+            <!-- ************************** 01-06 Article start***************************** -->
+            <article class="col-sm-4 mb-3">
+                <div class="row">
+                    <div class="col-1 number">01</div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/10/25/25" alt="">
+                        <span class="small ms-2">Bunyamin YAVUZ</span>
+                        <h6 class="mt-2"><strong><a class="no-underline-light" href="https://bunyaminyavuz.github.io/My-first-C-learning-process/">My webpage</a> for <a class="no-underline-light" href="https://github.com/BunyaminYavuz/My-first-C-learning-process">github repository</a> codes of content that needs to be learned in C programming language</strong></h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="row">
+                    <div class="col-1 number">02</div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/20/25/25" alt="">
+                        <span class="small ms-2">Bunyamin YAVUZ</span>
+                        <h6 class="mt-2"><strong>Check out my github repository where I made this <a class="no-underline-light" href="https://github.com/BunyaminYavuz/medium-clone">"Medium Clone"</a> web project.</strong></h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="row">
+                    <div class="col-1 number">03</div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/30/25/25" alt="">
+                        <span class="small ms-2">Bunyamin YAVUZ</span>
+                        <h6 class="mt-2"><strong>You can check out <a class="no-underline-light" href="https://bunyaminyavuz.github.io/" >my website</a>.</strong></h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="row">
+                    <div class="col-1 number">04</div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/40/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum.</span>
+                        <h6 class="mt-2"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="row">
+                    <div class="col-1 number">05</div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/50/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum.</span>
+                        <h6 class="mt-2"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-4 mb-3">
+                <div class="row">
+                    <div class="col-1 number">06</div>
+                    <div class="col-11">
+                        <img class="rounded-circle" src="https://picsum.photos/id/60/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum.</span>
+                        <h6 class="mt-2"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></h6>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!-- ************************** 01-06 Article end***************************** -->
+
+        </div>
+        <hr>
+
+        <div class="row mt-5">
+            <!--************************************* Section start****************************************-->
+            <section class="col-sm-8">
+                <article class="row mb-5">
+                    <!--********************************** Structure of a article start********************************-->
+                    <div class="col-8">
+                        <!--****************** Article part start ********************-->
+                        <img class="rounded-circle" src="https://picsum.photos/id/70/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum dolor.</span>
+                        <h5 class="mt-2"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, doloremque?</p>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><a href="" class="btn btn-sm btn-light rounded-pill">Lorem,
+                                    ipsum.</a></li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                            <li class="list-inline-item float-end"><i class="fa-regular fa-bookmark"></i></li>
+                        </ul>
+                    </div>
+                    <!--****************** Article part end ********************-->
+                    <div class="col-4">
+                        <!--***************** Side image start**************************-->
+                        <img class="w-100" src="https://picsum.photos/id/140/400/250" alt="">
+                    </div>
+                    <!--***************** Side image end**************************-->
+                </article>
+                <!--********************************** Structure of a article end********************************-->
+
+
+                <article class="row mb-5">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/110/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum.</span>
+                        <h5 class="mt-2"><strong>Lorem ipsum dolor sit.</strong></h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, fugiat. Nesciunt aperiam
+                            provident assumenda.</p>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><a href="" class="btn btn-sm btn-light rounded-pill">Lorem,
+                                    ipsum.</a></li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                            <li class="list-inline-item float-end"><i class="fa-regular fa-bookmark"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/75/400/250" alt="">
+                    </div>
+                </article>
+
+
+                <article class="row mb-5">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/200/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum dolor.</span>
+                        <h5 class="mt-2"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quia ratione ut odio in
+                            cupiditate. Quo, aliquid nemo.</p>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><a href="" class="btn btn-sm btn-light rounded-pill">Lorem,
+                                    ipsum.</a></li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                            <li class="list-inline-item float-end"><i class="fa-regular fa-bookmark"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/88/400/250" alt="">
+                    </div>
+                </article>
+
+
+                <article class="row mb-5">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/77/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum dolor.</span>
+                        <h5 class="mt-2"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, doloremque?</p>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><a href="" class="btn btn-sm btn-light rounded-pill">Lorem,
+                                    ipsum.</a></li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                            <li class="list-inline-item float-end"><i class="fa-regular fa-bookmark"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/99/400/250" alt="">
+                    </div>
+                </article>
+
+
+                <article class="row mb-5">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/49/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum dolor.</span>
+                        <h5 class="mt-2"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, doloremque?</p>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><a href="" class="btn btn-sm btn-light rounded-pill">Lorem,
+                                    ipsum.</a></li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                            <li class="list-inline-item float-end"><i class="fa-regular fa-bookmark"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/41/400/250" alt="">
+                    </div>
+                </article>
+
+                <article class="row mb-5">
+                    <div class="col-8">
+                        <img class="rounded-circle" src="https://picsum.photos/id/39/25/25" alt="">
+                        <span class="small ms-2">Lorem, ipsum dolor.</span>
+                        <h5 class="mt-2"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, doloremque?</p>
+                        <ul class="list-inline small">
+                            <li class="list-inline-item">Oct 12</li>
+                            <li class="list-inline-item">·11 min read</li>
+                            <li class="list-inline-item"><a href="" class="btn btn-sm btn-light rounded-pill">Lorem,
+                                    ipsum.</a></li>
+                            <li class="list-inline-item"><i class="fa-regular fa-star"></i></li>
+                            <li class="list-inline-item float-end"><i class="fa-regular fa-bookmark"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="https://picsum.photos/id/61/400/250" alt="">
+                    </div>
+                </article>
+
+            </section>
+            <!--************************************* Section end****************************************-->
+
+
+            <!--************************************* Aside start****************************************-->
+            <aside class="col-sm-4 sticky">
+                <h6>
+                    <strong>Discover more of what matters to you</strong>
+                </h6>
+                <ul class="list-inline asside-buttons">
+                    <li class="list-inline-item pb-3"><a href="https://github.com/BunyaminYavuz"
+                            class="btn btn-sm btn-light rounded-pill" target>Best Github Account</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/programming"
+                            class="btn btn-sm btn-light rounded-pill">Programming</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/data-science"
+                            class="btn btn-sm btn-light rounded-pill">Data Science</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/technology"
+                            class="btn btn-sm btn-light rounded-pill">Technology</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/self-improvement"
+                            class="btn btn-sm btn-light rounded-pill">Self Improvement</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/writing"
+                            class="btn btn-sm btn-light rounded-pill">Writing</a></li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/relationships"
+                            class="btn btn-sm btn-light rounded-pill">Relationships</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/machine-learning"
+                            class="btn btn-sm btn-light rounded-pill">Machine Learning</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/productivity"
+                            class="btn btn-sm btn-light rounded-pill">Productivity</a>
+                    </li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/tag/politics"
+                            class="btn btn-sm btn-light rounded-pill">Politics</a>
+                    </li>
+                </ul>
+                <a class="no-underline-light" href="#">
+                    <p class="text-success small">See more topics</p>
+                </a>
+                <hr>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item pb-3"><a
+                            href="https://help.medium.com/hc/en-us?source=home-------------------------------------"
+                            class="small no-underline-light">Help</a></li>
+                    <li class="list-inline-item pb-3"><a
+                            href="https://medium.statuspage.io/?source=home-------------------------------------"
+                            class="small no-underline-light">Status</a></li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/about"
+                            class="small no-underline-light">About</a></li>
+                    <li class="list-inline-item pb-3"><a
+                            href="https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e"
+                            class="small no-underline-light">Careers</a></li>
+                    <li class="list-inline-item pb-3"><a
+                            href="https://blog.medium.com/?source=home-------------------------------------"
+                            class="small no-underline-light">Blog</a></li>
+                    <li class="list-inline-item pb-3"><a
+                            href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9"
+                            class="small no-underline-light">Privacy</a></li>
+                    <li class="list-inline-item pb-3"><a
+                            href="https://policy.medium.com/medium-terms-of-service-9db0094a1e0f"
+                            class="small no-underline-light">Terms</a></li>
+                    <li class="list-inline-item pb-3"><a
+                            href="https://speechify.com/medium/?landing_url=https%3A%2F%2Fspeechify.com%2Fmedium%2F&source=home-------------------------------------"
+                            class="small no-underline-light">Text to speech</a></li>
+                    <li class="list-inline-item pb-3"><a href="https://medium.com/business"
+                            class="small no-underline-light">Teams</a></li>
+                </ul>
+            </aside>
+            <!--************************************* Aside end****************************************-->
+        </div>
+    </div>
+    <!--******************************** Main container end***************************************-->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
